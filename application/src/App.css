@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  color: rgb(24, 33, 109);
+  background-color: #ffffff;
+}
+@media(min-width:767px){
+
+  .middl, .about, .rocket{
+    margin: 150px auto;
+
+  }
+  .middl{
+    width: 50%;
+    text-align: center;
+    text-align: center;
+  }
+  .middl p{
+    width: 24rem;
+    margin: 20px auto;
+  }
+  /* .about{
+    margin: 100px auto;
+  }
+  .rocket{
+    margin: 100px auto;
+  } */
+}
