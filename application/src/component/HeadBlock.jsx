@@ -7,9 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 const HeadBlock = () => {
     const [ t, i18n ] = useTranslation("global");
-    const HandelchangeLanguage = (lang) => {
-        i18n.changeLanguage(lang)
-       }
+    
 
     useEffect(() => {
         Aos.init({
@@ -20,17 +18,17 @@ const HeadBlock = () => {
     <div className='container'>
         <div data-aos = "fade-right" className='row '>
             <div style={{ padding: "20px" }} className='intro col-md-6 bg-light'>
-                <button onClick={()=>{HandelchangeLanguage("en")}}>Englsih </button>
-                <button onClick={()=>{HandelchangeLanguage("ar")}}>عربية</button>
+                {/* <button onClick={()=>{HandelchangeLanguage("en")}}>Englsih </button>
+                <button onClick={()=>{HandelchangeLanguage("ar")}}>عربية</button> */}
                 <h3 className='w-50'>{t("title")}</h3>
                 <p className='w-50'>{t("text")}</p>
                 <div>
-                    <button className='border-0 bg-primary pt-1 pb-1 ps-4 pe-4'>Explore</button>
-                    <button className='border-0 bg-primary pt-1 pb-1 ps-4 pe-4 ms-2'>Learn More</button>
+                    <button className='BTN'>Explore</button>
+                    <button style={{ color: "rgb(46, 24, 106)" }} className='BTN bg-white ms-2'>Learn More</button>
                 </div>
             </div>
             <div className=' d-flex justify-content-center align-items-center col-md-6'>
-                <img width={"100%"} src={dev} />
+                <img  width={"100%"} src={dev} />
             </div>
 
         </div>

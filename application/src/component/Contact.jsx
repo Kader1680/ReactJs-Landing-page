@@ -3,6 +3,7 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 // import formInfo from "../content/form.json"
 import { useForm } from 'react-hook-form'
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -18,6 +19,8 @@ const Contact = () => {
         })
     }, []);
 
+    const [ t, i18n ] = useTranslation("global");
+
   return (
     <div data-aos= "fade-up" style={{ marginBottom:" 5rem" }} className='container'>
         <div class="row">
@@ -27,23 +30,23 @@ const Contact = () => {
               </div>
               <div class="col-md-6">
                 <form onSubmit={handleSubmit(suusss)}>
-                    <label>Name</label><br></br>
+                    <label>{t("name")}</label><br></br>
                     <input {...register("Name", {required: true})} placeholder='Name' /><br></br>
                     {/* if type of the input Name == false that (mean &&)  */}
                     <div className='text-danger'>{errors.Name?.type =="required" && "The Name is required"}</div>
-                    <label>Email</label><br></br>
+                    <label>{t("Email")}</label><br></br>
                     <input {...register("Email", {required: true})} placeholder='Email' /><br></br>
                     <div className='text-danger'>{errors.Email?.type =="required" && "The Email is required"}</div>
-                    <label>Password</label><br></br>
+                    <label>{t("password")}</label><br></br>
                     <input {...register("Password", {required: true, maxLength: 5})} placeholder='Password' /><br></br>
                     <div className='text-danger'>{errors.Password?.type ==="required" && "The Password is required"}</div>
                     <div className='text-danger'>{errors.Password?.type ==="maxLength" && "The maxlenght is 5"}</div>
-                    <label>Confirm Password</label><br></br>
+                    <label>{t("confirm")}</label><br></br>
                     <input {...register("ConfirmPassword", {required: true})} placeholder='Confirm Password' /><br></br>
                     <div className='text-danger'>{errors.ConfirmPassword?.type =="required" && "Please Confirm Password"}</div>
-                    <label >Message</label><br></br>
+                    <label >{t("message")}</label><br></br>
                     <input   placeholder='Message' /><br></br>
-                    <button className='mt-4'>Submit</button>
+                    <button className='BTN'>{t("submit")}</button>
                 </form>
                 
               </div>

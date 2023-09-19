@@ -12,5 +12,29 @@
         "title": "Learn more",
         "color": "#fff"
         }
-    ]
+    ],
+
+
+
+    "titleAbout": "Light, fast & responsive",
+    "textAbout": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+    "section": [
+      {
+        "title": "Why Antd?",
+        "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+        "icon": "notes.svg"
+      },
+      {
+        "title": "Why styled-components?",
+        "content": "Styled Components gives you total control over your components.",
+        "icon": "notes.svg"
+      }
+    ],
+
+    "titleRocket": "Ready made sections",
+    "textRocket": "Landy comes with a set of ready to use sections to help you easily create a landing page for your own brand, with all the content your startup desires. In order to replace any dummy elements (text, image, etc..) all you need to do is go to content folder and input your real content.",
+
+    "titleMidel": "Introduce your product quickly & effectively",
+    "textMidel": "Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.",
+    "buttonMidel": "Get started"
 }

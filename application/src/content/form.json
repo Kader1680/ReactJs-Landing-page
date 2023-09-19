@@ -1,0 +1,7 @@
+{
+    "name": "Enter Your Name",
+    "Email" : "Enter Your  Email Address",
+    "password" : "Enter Your Password",
+    "confirm" : "Confirm Your Password",
+    "message" : "Send Your Message"
+}

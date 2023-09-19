@@ -4,9 +4,10 @@ import note from "../assests/notes.svg"
 import about from  "../content/about.json"
 import Aos from 'aos'
 import "aos/dist/aos.css"
-
+import { useTranslation } from 'react-i18next'
 const About = () => {
-
+    const [t, i18n] = useTranslation('global')
+    
     useEffect(() => {
         Aos.init({
             duration: 3000
@@ -17,18 +18,18 @@ const About = () => {
     <div data-aos = "fade-right" className='container about'>
         <div className='row'>
             <div className='col-md-6 d-flex align-items-center justify-content-center '>
-                <img src={gh} />
+                <img class="Img" src={gh} />
             </div>
             <div className='col-md-6 '>
-                <h3>{about.title}</h3>
-                <p>{about.text} </p>
+                <h3>{t("titleAbout")}</h3>
+                <p>{t("textAbout")} </p>
                 
                 <div className='row'>
                 {about.section.map((item)=>(
                     <div  className='col-6'> 
                         <img width="60px" height="60px"  src={note} />
-                        <div style={{ fontSize: "12px" }} > {item.title} </div>
-                        <div style={{ fontSize: "11px" }} > {item.content} </div>
+                        <div style={{ fontSize: "12px" }} > {t("title")} </div>
+                        <div style={{ fontSize: "11px" }} > {t("content")} </div>
                         
                     </div>
                 ))} 
