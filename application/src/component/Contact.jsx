@@ -29,14 +29,15 @@ const Contact = () => {
                 <form onSubmit={handleSubmit(suusss)}>
                     <label>Name</label><br></br>
                     <input {...register("Name", {required: true})} placeholder='Name' /><br></br>
-                    {/* if the input Name == false that (mean &&)  */}
+                    {/* if type of the input Name == false that (mean &&)  */}
                     <div className='text-danger'>{errors.Name?.type =="required" && "The Name is required"}</div>
                     <label>Email</label><br></br>
                     <input {...register("Email", {required: true})} placeholder='Email' /><br></br>
                     <div className='text-danger'>{errors.Email?.type =="required" && "The Email is required"}</div>
                     <label>Password</label><br></br>
-                    <input {...register("Password", {required: true})} placeholder='Password' /><br></br>
-                    <div className='text-danger'>{errors.Password?.type =="required" && "The Password is required"}</div>
+                    <input {...register("Password", {required: true, maxLength: 5})} placeholder='Password' /><br></br>
+                    <div className='text-danger'>{errors.Password?.type ==="required" && "The Password is required"}</div>
+                    <div className='text-danger'>{errors.Password?.type ==="maxLength" && "The maxlenght is 5"}</div>
                     <label>Confirm Password</label><br></br>
                     <input {...register("ConfirmPassword", {required: true})} placeholder='Confirm Password' /><br></br>
                     <div className='text-danger'>{errors.ConfirmPassword?.type =="required" && "Please Confirm Password"}</div>
