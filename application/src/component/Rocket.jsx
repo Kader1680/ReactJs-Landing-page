@@ -13,8 +13,8 @@ const Rocket = () => {
         })
     }, []);
   return (
-    <div data-aos ="fade-left" class="container rocket">
-        <div class="row">
+    <div class="container rocket overflow-x-hidden">
+        <div  data-aos ="fade-right" class="row overflow-x-hidden">
             <div class=" col-md-6 d-flex align-items-center justify-content-center ">
                 <img class="Img" style={{   width: "20rem;" }}  src={rock} />
             </div>
