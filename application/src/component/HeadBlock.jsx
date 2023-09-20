@@ -17,7 +17,7 @@ const HeadBlock = () => {
   return (
     <div className='container'>
         <div data-aos = "fade-right" className='row '>
-            <div style={{ padding: "20px" }} className='intro col-md-6 bg-light'>
+            <div style={{ padding: "20px" }} className='intro col-md-6'>
                 {/* <button onClick={()=>{HandelchangeLanguage("en")}}>Englsih </button>
                 <button onClick={()=>{HandelchangeLanguage("ar")}}>عربية</button> */}
                 <h6 className=''>{t("title")}</h6>

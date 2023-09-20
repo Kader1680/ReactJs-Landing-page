@@ -16,7 +16,7 @@ const [ t, i18n ] = useTranslation("global");
       <button onClick={()=>{HandelchangeLanguage("ar")}}>عربية</button>
       <p   >{t("t")}</p>
       <p   >{t("c")}</p> */}
-<footer class="text-center text-lg-start bg-light text-muted pt-3">
+<footer  class="text-center text-lg-start bg-light text-muted pt-3">
   {/* <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     
     <div class="me-5 d-none d-lg-block">
