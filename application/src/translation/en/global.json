@@ -1,7 +1,31 @@
 {
-    "t" :"english langage",
-    "c": "i don't love progamming but for the money",
-
+    "Contact" :"Contact",
+    "Policy": "Policy",
+    "sectionsContact" : [
+      {
+        "Tell":  "Tell Us Everything",
+        "question": "Do you have any question? Feel free to reach out."
+      }
+    ],
+    "PolicyContent" :
+      {
+        "a":  "Application Security",
+        "b":  "Software Principles",
+        "c":  "Support Center",
+        "d":  "Tell Us Everything",
+        "e": "Customer Support"
+      }
+    ,
+    "use" : "company",
+    "Usefeul" : 
+      {
+        "a":  "Home",
+        "b":  "Mission",
+        "c":  "About",
+        "d":  "Product",
+        "e":  "Contact"
+      }
+    ,
     "title": "Landing page template for developers & startups",
     "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
     "button": [
@@ -36,5 +60,18 @@
 
     "titleMidel": "Introduce your product quickly & effectively",
     "textMidel": "Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.",
-    "buttonMidel": "Get started"
+    "buttonMidel": "Get started",
+
+    "contactForm": "Contact form",
+    "pContact": "The following form demonstrates form validation in action. Contact form component reduces the amount of time it is being re-rendered by the user as it embraces uncontrolled form validation to reduce any unnecessary performance penalty.",
+
+    "Footer": "All © 2023 Copyright: Developed with By " ,
+    "abdel" : "Ould Hennia Abdelkader",
+
+    "ny" : "New York, NY 10012, US",
+    "em" : "Landy@gmail.com",
+    "ph" : " + 01 234 567 88",
+    "prod" : "Product",
+    "con" : "Contact"
+
 }

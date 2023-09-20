@@ -20,8 +20,8 @@ const HeadBlock = () => {
             <div style={{ padding: "20px" }} className='intro col-md-6 bg-light'>
                 {/* <button onClick={()=>{HandelchangeLanguage("en")}}>Englsih </button>
                 <button onClick={()=>{HandelchangeLanguage("ar")}}>عربية</button> */}
-                <h3 className='w-50'>{t("title")}</h3>
-                <p className='w-50'>{t("text")}</p>
+                <h6 className=''>{t("title")}</h6>
+                <p className=''>{t("text")}</p>
                 <div>
                     <button className='BTN'>Explore</button>
                     <button style={{ color: "rgb(46, 24, 106)" }} className='BTN bg-white ms-2'>Learn More</button>

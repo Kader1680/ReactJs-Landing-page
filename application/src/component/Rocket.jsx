@@ -19,7 +19,7 @@ const Rocket = () => {
                 <img class="Img" style={{   width: "20rem;" }}  src={rock} />
             </div>
             <div class=" col-md-6">
-                <h3>{t("titleRocket")}</h3>
+                <h6>{t("titleRocket")}</h6>
                 <p>{t("textRocket")}</p>
             </div>
         </div>

@@ -22,13 +22,13 @@ const Contact = () => {
     const [ t, i18n ] = useTranslation("global");
 
   return (
-    <div data-aos= "fade-up" style={{ marginBottom:" 5rem" }} className='container'>
-        <div class="row">
+    <div data-aos= "fade-up" style={{ marginBottom:" 5rem", backgroundColor: "rgb(24, 33, 109)", color: "white"  }} className='container'>
+        <div class="row  d-flex align-items-center p-5">
               <div class="col-md-6 ">
-                    {/* <h3>{formInfo.title}</h3>
-                    <p>{formInfo.text}</p> */}
+                    <h6>{t("contactForm")}</h6>
+                    <p style={{ fontSize: "21px" }}>{t("pContact")}</p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 form">
                 <form onSubmit={handleSubmit(suusss)}>
                     <label>{t("name")}</label><br></br>
                     <input {...register("Name", {required: true})} placeholder='Name' /><br></br>

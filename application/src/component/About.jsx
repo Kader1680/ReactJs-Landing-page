@@ -21,7 +21,7 @@ const About = () => {
                 <img class="Img" src={gh} />
             </div>
             <div className='col-md-6 '>
-                <h3>{t("titleAbout")}</h3>
+                <h6>{t("titleAbout")}</h6>
                 <p>{t("textAbout")} </p>
                 
                 <div className='row'>

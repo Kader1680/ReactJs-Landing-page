@@ -12,7 +12,7 @@ const MiddelBlock = () => {
     }, []);
   return (
     <div style={{ margin: "100px auto" }} data-aos = "fade-up" className='text-center middl container'>
-        <h3>{t("titleMidel")}</h3>
+        <h6>{t("titleMidel")}</h6>
         <p> {t("textMidel")} </p>
         <button className='BTN'>{t("buttonMidel")} </button>
 

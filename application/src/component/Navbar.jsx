@@ -12,25 +12,25 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo">
-          logo
+        <div className="logo fs-4">
+            Landy
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <i class="fa-solid fa-bars d-sm-none"></i>
         </div>
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+        <div className={`nav-elements ${showNavbar && 'active'}`}>
           <ul>
             <li>
               <a href='#'>Home</a>
             </li>
             <li>
-              <a href='#'>Blog</a>
-            </li>
-            <li>
-              <a href='#'>Projects</a>
-            </li>
-            <li>
               <a href='#'>About</a>
+            </li>
+            <li>
+              <a href='#'>Mission</a>
+            </li>
+            <li>
+              <a href='#'>Product</a>
             </li>
             <li>
               <a href='#'>Contact</a>

@@ -8,14 +8,29 @@ body{
   background-color: #ffffff;
   overflow-x: hidden;
 }
-@media(min-width:767px){
-  .Img{
-    max-width: 300px;
+p{
+  font-size: 21px;
+}
+.Img{
+  max-width: 300px;
+}
+@media(min-width:991px){
+  h6{
+    font-size: 56px;
   }
 }
 
 @media(min-width:767px){
-
+  input{
+    width: 100%;
+  }
+  .Img{
+    /* max-width: 300px; */
+    max-width: 420px;
+  }
+  h6{
+    font-size: 47px;
+  }   
   /* .middl, .about, .rocket{
     margin: 150px auto;
 
@@ -44,7 +59,7 @@ input{
     background: rgb(241, 242, 243);
     transition: all 0.3s ease-in-out 0s;
     outline: none;
-    width: 80%;
+    
     padding: 1rem 1.25rem;
     margin: 10px 0px;
 }
@@ -115,6 +130,15 @@ button:hover{
   background-color: rgb(255, 130, 92);
 }
 @media (max-width: 767px) {
+  .form{
+    margin-top: 5rem;
+  }
+  input{
+    width: 100%;
+  }
+  h6{
+    font-size: 32px;
+  }   
   .menu-icon {
     display: block;
     cursor: pointer;
