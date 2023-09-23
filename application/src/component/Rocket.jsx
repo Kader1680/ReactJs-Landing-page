@@ -16,7 +16,7 @@ const Rocket = () => {
     <div class="container rocket overflow-x-hidden">
         <div  data-aos ="fade-right" class="row overflow-x-hidden">
             <div class=" col-md-6 d-flex align-items-center justify-content-center ">
-                <img class="Img" style={{   width: "20rem;" }}  src={rock} />
+                <img class="Img" style={{   width: "20rem" }}  src={rock} />
             </div>
             <div class=" col-md-6">
                 <h6>{t("titleRocket")}</h6>

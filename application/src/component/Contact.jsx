@@ -22,7 +22,7 @@ const Contact = () => {
     const [ t, i18n ] = useTranslation("global");
 
   return (
-    <div data-aos= "fade-up" style={{ marginBottom:" 5rem", backgroundColor: "rgb(24, 33, 109)", color: "white"  }} className='container'>
+    <div data-aos= "fade-up" style={{ marginBottom:" 5rem", backgroundColor: "rgb(24, 33, 109)", color: "white"  }} class='container'>
         <div class="row  d-flex align-items-center p-5">
               <div class="col-md-6 ">
                     <h6>{t("contactForm")}</h6>
@@ -33,20 +33,20 @@ const Contact = () => {
                     <label>{t("name")}</label><br></br>
                     <input {...register("Name", {required: true})} placeholder='Name' /><br></br>
                     {/* if type of the input Name == false that (mean &&)  */}
-                    <div className='text-danger'>{errors.Name?.type =="required" && "The Name is required"}</div>
+                    <div class='text-danger'>{errors.Name?.type =="required" && "The Name is required"}</div>
                     <label>{t("Email")}</label><br></br>
                     <input {...register("Email", {required: true})} placeholder='Email' /><br></br>
-                    <div className='text-danger'>{errors.Email?.type =="required" && "The Email is required"}</div>
+                    <div class='text-danger'>{errors.Email?.type =="required" && "The Email is required"}</div>
                     <label>{t("password")}</label><br></br>
                     <input {...register("Password", {required: true, maxLength: 5})} placeholder='Password' /><br></br>
-                    <div className='text-danger'>{errors.Password?.type ==="required" && "The Password is required"}</div>
-                    <div className='text-danger'>{errors.Password?.type ==="maxLength" && "The maxlenght is 5"}</div>
+                    <div class='text-danger'>{errors.Password?.type ==="required" && "The Password is required"}</div>
+                    <div class='text-danger'>{errors.Password?.type ==="maxLength" && "The maxlenght is 5"}</div>
                     <label>{t("confirm")}</label><br></br>
                     <input {...register("ConfirmPassword", {required: true})} placeholder='Confirm Password' /><br></br>
-                    <div className='text-danger'>{errors.ConfirmPassword?.type =="required" && "Please Confirm Password"}</div>
+                    <div class='text-danger'>{errors.ConfirmPassword?.type =="required" && "Please Confirm Password"}</div>
                     <label >{t("message")}</label><br></br>
                     <input   placeholder='Message' /><br></br>
-                    <button className='BTN'>{t("submit")}</button>
+                    <button class='BTN'>{t("submit")}</button>
                 </form>
                 
               </div>

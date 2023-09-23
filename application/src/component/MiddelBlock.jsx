@@ -11,10 +11,10 @@ const MiddelBlock = () => {
         })
     }, []);
   return (
-    <div style={{ margin: "100px auto" }} data-aos = "fade-up" className='text-center middl container'>
+    <div style={{ margin: "100px auto" }} data-aos = "fade-up" class='text-center middl container'>
         <h6>{t("titleMidel")}</h6>
         <p> {t("textMidel")} </p>
-        <button className='BTN'>{t("buttonMidel")} </button>
+        <button class='BTN'>{t("buttonMidel")} </button>
 
     </div>
   )

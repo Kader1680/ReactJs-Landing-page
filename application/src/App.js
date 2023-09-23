@@ -20,7 +20,7 @@ function App() {
   //   )
   // }
   return (
-    <div className="App ">
+    <div class="App ">
      <Navbar />
      {/* <div style={{ position: "fixed",top: "50%", right: "10%", zIndex: "5", }}>
         <Translate  />
@@ -31,7 +31,7 @@ function App() {
      <About />
      <Rocket />
      <Contact />
-     <button className='border-0 bg-transparent' onClick = {()=>{window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}}><ScrollTop  /></button>
+     <button class='border-0 bg-transparent' onClick = {()=>{window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}}><ScrollTop  /></button>
      <Footer />
     </div>
   );

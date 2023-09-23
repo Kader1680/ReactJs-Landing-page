@@ -15,18 +15,18 @@ const About = () => {
     }, []);
    
   return (
-    <div data-aos = "fade-right" className='container about'>
-        <div className='row'>
-            <div className='col-md-6 d-flex align-items-center justify-content-center '>
+    <div data-aos = "fade-right" class='container about'>
+        <div class='row'>
+            <div class='col-md-6 d-flex align-items-center justify-content-center '>
                 <img class="Img" src={gh} />
             </div>
-            <div className='col-md-6 '>
+            <div class='col-md-6 '>
                 <h6>{t("titleAbout")}</h6>
                 <p>{t("textAbout")} </p>
                 
-                <div className='row'>
-                {about.section.map((item)=>(
-                    <div  className='col-6'> 
+                <div class='row'>
+                {about.section.map((iem, index)=>(
+                    <div  key={index} class='col-6'> 
                         <img width="60px" height="60px"  src={note} />
                         <div style={{ fontSize: "12px" }} > {t("title")} </div>
                         <div style={{ fontSize: "11px" }} > {t("content")} </div>
